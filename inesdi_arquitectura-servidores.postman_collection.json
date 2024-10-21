@@ -47,6 +47,26 @@
 			"response": []
 		},
 		{
+			"name": "Employees - Mayor edad",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:{{PORT}}/api/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "{{PORT}}",
+					"path": [
+						"api",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Employees - Paginado",
 			"request": {
 				"method": "GET",
