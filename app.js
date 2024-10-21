@@ -30,6 +30,7 @@ app.use((error, req, res, next) => {
   }
 
   const data = {};
+  data.status = false;
   data.message = error.message;
 
   if (error.errors) {
@@ -44,6 +45,8 @@ app.use((error, req, res, next) => {
 
 const port = process.env.PORT || 8000;
 
-app.listen(port, () => {
+const server = app.listen(port, () => {
   console.info(`Application running at port ${port}`)
 });
+
+module.exports = server;
